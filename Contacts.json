@@ -1,0 +1,29 @@
+{
+  {
+  "contact_id": "01",
+  "user_id": "01",
+  "first_name": "Jeff",
+  "last_name": "Holland",
+  "email": "jeffholland@gmail.com",
+  "phone_number": "325-634-7732",
+  "address": "508 Birch Street, Des Moines, IA"
+},
+{
+  "contact_id": "02",
+  "user_id": "02",
+  "first_name": "Martin",
+  "last_name": "Smith",
+  "email": "martimsmith@gmail.com",
+  "phone_number": "219-545-3086",
+  "address": "3232 NW Street, Houston, TX"
+},
+{
+  "contact_id": "03",
+  "user_id": "03",
+  "first_name": "Joe",
+  "last_name": "Brody",
+  "email": "joebrody@gmail.com",
+  "phone_number": "662-750-1258",
+  "address": "1450 Rose Avenue, Miami, FL"
+}
+}
