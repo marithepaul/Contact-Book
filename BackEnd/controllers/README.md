@@ -1,1 +1,1 @@
-These json files will store the data for users and their contact information
+These javascript files will act as the logic for contact information and user information
