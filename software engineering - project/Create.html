@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <main>
+        <section class="one">
+            <div class="container">
+                <h1>Add your contact</h1>
+                <p>Fill in the information that you have on here below!</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="firstname">First name*</label>
+                        <input 
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            required
+                            class="form-element"
+                            placeholder="John">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Last name*</label>
+                        <input 
+                            type="text"
+                            name="lastname"
+                            id="lastname"
+                            required
+                            class="form-element"
+                            placeholder="Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address*</label>
+                        <input 
+                            type="text"
+                            name="email"
+                            id="email"
+                            required
+                            class="form-element"
+                            placeholder="john_doe88@yahoo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phonenumber">Phone number*</label>
+                        <input 
+                            type="text"
+                            name="phonenumber"
+                            id="phonenumber"
+                            required
+                            class="form-element"
+                            placeholder="(808)243-5483">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="homenumber">Home phone number</label>
+                        <input 
+                            type="text"
+                            name="homenumber"
+                            id="homenumber"
+                            class="form-element"
+                            placeholder="(419)876-3462">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input 
+                            type="text"
+                            name="address"
+                            id="addresss"
+                            class="form-element"
+                            placeholder="1029 elmo street">
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="message">What other extra information are there?</label>
+                        <textarea name="message" id="message" class="form-element" placeholder="MEEP"></textarea>
+                    </div>
+
+                    <div class="submitgroup">
+                        <input type="submit" value="SEND MESSAGE">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
