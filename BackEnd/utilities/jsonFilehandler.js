@@ -1,23 +1,18 @@
 const fs = require('fs');
 const path = require('path');
 
-const readJSON = (filePath) => {
-    return new Promise((resolve, reject) => {
-        fs.readFile(path.join(__dirname, '..', filePath), 'utf8', (err, data) => {
-            if (err) reject(err);
-            else resolve(JSON.parse(data));
-        });
-    });
-};
+const usersFilePath = path.join(__dirname, '../data/users.json');
+const contactsFilePath = path.join(__dirname, '../data/contacts.json');
 
-const writeJSON = (filePath, data) => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile(path.join(__dirname, '..', filePath), JSON.stringify(data, null, 2), 'utf8', (err) => {
-            if (err) reject(err);
-            else resolve();
-        });
-    });
+const readJSON = (filePath) => {
+    try {
+        const data = fs.readFileSync(path.resolve(filePath), 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        console.error(`Error reading JSON from ${filePath}:`, error.message);
+        return []; // Return an empty array if the file is invalid
+    }
 };
+const writeJSON = (filePath, data) => fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 
 module.exports = { readJSON, writeJSON };
-
