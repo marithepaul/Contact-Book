@@ -9,3 +9,4 @@ router.put('/:id', auth, contactsController.updateContact);
 router.delete('/:id', auth, contactsController.deleteContact);
 
 module.exports = router;
+
