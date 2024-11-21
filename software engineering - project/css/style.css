@@ -129,15 +129,10 @@ div.intLogo {
     height: 75%;
 }
 
-div.intLogo#logo1 {
-    background-image: url('../imgs/add.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-div.intLogo#logo2 {
-    background-image: url('../imgs/delete.png');
+img {
+    height: 75%;
+    margin-left: 135px;
+    margin-top: 25px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
