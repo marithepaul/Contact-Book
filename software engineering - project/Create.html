@@ -89,6 +89,28 @@
                 </form>
             </div>
         </section>
+
+        <script>
+            app.post("/submit-form", (req, res) => {
+                const {name, email} = req.body;
+                const errors = {};
+
+                if (!name || name.length < 3) {
+                    errors.name = "name must be at least 3 characters.";
+                }
+                
+                if (!email || !email.includes("@")) {
+                    errors.email = "Invalid email address.";
+                }
+
+                if (objects.keys(errors).length > 0) {
+                    return res.status(400).json(errors);
+                }
+
+                res.send("Form submitted!");
+            });
+        </script>
+        
     </main>
 </body>
 </html>
