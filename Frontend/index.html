@@ -33,7 +33,6 @@
                 }
             });
         }
-
         // Function to load all contacts
         function loadContacts() {
             $.get("/contacts/", function(data) {
@@ -47,7 +46,6 @@
                 });
             });
         }
-
         // Function to delete a contact
         function deleteContact(id) {
             $.ajax({
@@ -59,7 +57,6 @@
                 }
             });
         }
-
         // Handle form submission
         $(document).ready(function() {
             $('#contactForm').submit(function(event) {
